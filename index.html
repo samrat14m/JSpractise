@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        button{
+            padding: 5px 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            background-color: rgb(248, 255, 185);
+        }
+        body {
+            margin: 10vh 50vh 0 50vh;
+            font-family: Verdana;
+            background-color: rgba(176, 255, 229, 0.678);
+        }
+        #main{
+            color: rgb(17, 17, 170);
+            background-color: rgb(240, 234, 148);
+            font-size: 1.5rem;
+        }
+        .box{
+            width: 100px;
+            height:100px;
+            margin:2px;
+            border: 2px solid rgba(0, 24, 161, 0.829);
+        }
+        #container{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOC OBJ MANIPULATION</h1><hr>
+    <div id="main">
+    </div><br>
+    <button onclick="show()">Show Hidden Text</button>
+    <hr><br>
+    
+    <div id="container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+    </div>
+    <button onclick="changeDir()">Change flex-dir</button>
+    <hr><br>
+
+    <p id="para">I AM RED</p>
+    <button onclick="colorChange()">Change</button>
+    <hr>
+     
+    <p>Choose the front-end framework:</p>    
+    <select name="" id="text">    
+        <option value="REACT">REACT</option>
+        <option value="ANGULAR">ANGULAR</option>
+        <option value="VUE">VUE</option>    
+    </select> 
+    <br> <br>
+
+    <button onclick="getOption()">Click here </button>   
+    <p>You choice  :    
+        <span id='output'></span>
+    </p>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
